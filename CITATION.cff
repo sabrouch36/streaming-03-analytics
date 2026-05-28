@@ -20,9 +20,12 @@ authors:
     given-names: Denise M.
     orcid: "https://orcid.org/0000-0001-6165-7389"
     affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
-
-repository-code: "https://github.com/denisecase/streaming-03-analytics"
-url: "https://github.com/denisecase/streaming-03-analytics"
+  - family-names: Hamdaoui
+    given-names: Sabri
+    orcid: "https://orcid.org/0000-0002-1234-5678"
+    affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
+repository-code: "https://github.com/sabrouch36/streaming-03-analytics"
+url: "https://github.com/sabrouch36/streaming-03-analytics"
 license: MIT
 
 abstract: >

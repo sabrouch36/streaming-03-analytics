@@ -1,7 +1,7 @@
 # streaming-03-analytics
 
 [![API Reference](https://img.shields.io/badge/API--Utils-datafun--streaming-purple)](https://denisecase.github.io/datafun-streaming/api/)
-[![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
+[![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://sabrouch36.github.io/streaming-03-analytics/)
 [![Python 3.14](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](./pyproject.toml)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
 
@@ -44,7 +44,7 @@ You'll work with just these areas:
 ## Instructions
 
 Follow the
-[step-by-step workflow guide](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/)
+[![Workflow Guide](https://img.shields.io/badge/Pro--Guide-pro--analytics--02-green)](https://sabrouch36.github.io/streaming-03-analytics/)
 to complete:
 
 1. Phase 1. **Start & Run**
@@ -101,7 +101,7 @@ open a machine terminal in your `Repos` folder:
 
 ```bash
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/streaming-03-analytics
+git clone https://sabrouch36.github.io/streaming-03-analytics/
 
 cd streaming-03-analytics
 code .
