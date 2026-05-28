@@ -246,3 +246,62 @@ If you see something like this in your terminal: `>>>` or `...`
 You accidentally started Python interactive mode.
 It happens.
 Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
+
+## Technical Modification
+
+For Phase 4, I implemented a custom streaming analytics enhancement by adding a new derived
+business field called `high_value_order`.
+
+### What I Changed
+
+I created custom project files instead of modifying the original example files directly:
+
+- `derived_fields_sabri.py`
+- `data_contract_sabri.py`
+- `kafka_consumer_sabri.py`
+
+The new logic calculates whether an order should be classified as a high-value transaction
+based on the final order total.
+
+### Business Logic Added
+
+A new threshold constant was introduced:
+
+```python
+HIGH_VALUE_ORDER_THRESHOLD = 150.0
+```
+
+If an order total is greater than or equal to this threshold, the consumer marks the transaction as:
+
+```python
+high_value_order = True
+```
+
+Otherwise:
+
+```python
+high_value_order = False
+```
+
+### Why I Made This Change
+
+This modification simulates a real-world streaming analytics scenario where businesses
+monitor high-value transactions in real time.
+
+The enhancement demonstrates:
+
+- streaming data enrichment
+- custom business logic
+- derived field calculations
+- real-time transaction monitoring
+
+### Results Observed
+
+After running the modified consumer pipeline:
+
+- the new `high_value_order` field appeared in the output CSV
+- orders above the threshold were automatically flagged
+- the streaming pipeline continued working successfully without errors
+
+This modification improved the business intelligence capabilities of the project while
+preserving the original example files.
