@@ -305,3 +305,85 @@ After running the modified consumer pipeline:
 
 This modification improved the business intelligence capabilities of the project while
 preserving the original example files.
+
+## Phase 5 – Applied Streaming Revenue Analytics
+
+For Phase 5, I extended the project beyond simple message enrichment and applied streaming
+ analytics techniques to generate business insights from the processed sales data.
+
+### Revenue Analytics Dashboard
+
+A new analytics module (`revenue_dashboard.py`) was created to analyze the consumer output
+ file and produce visual business intelligence reports.
+
+### Additional Analytics Implemented
+
+#### 1. Cumulative Revenue Growth
+
+The project calculates cumulative revenue over time and generates a visualization showing
+how revenue grows as new transactions are processed.
+
+Output:
+
+- `data/output/revenue_growth.png`
+
+#### 2. Revenue by Course
+
+The project aggregates revenue by product and identifies the highest-performing courses.
+
+Output:
+
+- `data/output/course_revenue.png`
+
+Key Finding:
+
+- `PY-STREAM-005` generated the highest revenue in the sample dataset.
+
+#### 3. High-Value Order Distribution
+
+Using the custom `high_value_order` field introduced in Phase 4, the project analyzes the
+ proportion of high-value transactions versus regular transactions.
+
+Output:
+
+- `data/output/high_value_distribution.png`
+
+Key Findings:
+
+- Total Orders Processed: 50
+- High Value Orders: 7
+- High Value Percentage: 14.0%
+
+### Business Insights
+
+The analytics revealed:
+
+- Revenue growth increased steadily throughout the streaming session.
+- A small percentage of transactions generated disproportionately high value.
+- Streaming Data with Python (`PY-STREAM-005`) was the strongest revenue-generating product.
+- Real-time enrichment combined with post-stream analytics provides actionable business intelligence.
+
+### Visualizations
+
+#### Revenue Growth
+
+![Revenue Growth](data/output/revenue_growth.png)
+
+#### Revenue by Course
+
+![Revenue by Course](data/output/course_revenue.png)
+
+#### High Value Order Distribution
+
+![High Value Order Distribution](data/output/high_value_distribution.png)
+
+### Skills Demonstrated
+
+- Kafka Streaming Analytics
+- Data Validation
+- Derived Field Engineering
+- Business KPI Analysis
+- Revenue Analytics
+- Data Visualization with Matplotlib
+- Streaming Data Enrichment
+- Real-Time Business Intelligence
